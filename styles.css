@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+/*=======================================
+CALCULATION PANEL
+=========================================*/
+
+.calc-panel__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-image: url(img-1.jpg);
+    background-size: cover;
+}
+
+.calc-panel__container--header {
+    margin-bottom: 20px;
+}
+
+.red-indicator {
+    background-color: rgba(255, 0, 0, 0.4) !important;
+}
+
+.blue-indicator {
+    background-color: rgba(0, 88, 255, 0.4) !important;
+}
+
+.indicator,
+.main-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.main-indicator {
+    padding: 15px 15px;
+    width: 200px;
+/*    background-color: rgba(217, 42, 42, 0.7);*/
+    font-size: 25px;
+}
+
+.calc-panel__container--center,
+.calc-panel__container--left,
+.calc-panel__container--right {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #fff;
+}
+
+.calc-panel__container--center {
+    height: 35vh;
+}
+
+.calc-panel__container--left,
+.calc-panel__container--right {
+    height: 30vh;
+}
+
+.calc-panel__container--left,
+.calc-panel__container--center, 
+.calc-panel__container--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.calc-panel__container--left div,
+.calc-panel__container--center div,
+.calc-panel__container--right div {
+    display: flex;
+}
+
+.transition-left {
+    transition: transform 0.3s;
+}
+
+.customer-total:hover .transition-left,
+.customer-ppb:hover .transition-left,
+.orgaloc-l12:hover .transition-left,
+.orgaloc-l14:hover .transition-left,
+.total-ppb:hover .transition-left,
+.l12-ppb:hover .transition-left,
+.l14-ppb:hover .transition-left,
+.sales-total:hover .transition-left,
+.sales-l12:hover .transition-left,
+.sales-l14:hover .transition-left {
+    transform: translateX(-10px);
+}
+
+
+/*=======================================
+TOP SECTION - INPUTS
+=========================================*/
+.top__inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #dedddd;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.apu,
+.orgaloc, 
+.customer, 
+.project,
+.defect-desc,
+.ppb,
+.vim,
+.defect-desc::placeholder,
+.ppb::placeholder,
+.vim::placeholder {
+    color: #3b3b3b;
+    font-family: "Lato", sans-serif;
+}
+
+.custom-input {
+    border: 1px solid #3b3b3b;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.custom-input:focus {
+    outline: none;
+}
+
+.top__inputs select,
+.top__inputs input {
+    height: 30px;
+    margin: 0 10px;
+}
+
+.top__inputs button {
+    margin: 5px 15px;
+}
+
+.submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.2s;
+    font-size: 45px;
+    color: rgba(59, 59, 59, 0.7);
+}
+
+.submit-btn:focus {
+    outline: none;
+}
+
+.submit-btn:active {
+    transform: scale(0.9, 0.9);
+}
+
+.submit-btn:hover {
+    color: rgb(59, 59, 59);
+}
+
+/*=======================================
+DATA SECTION - USER
+=========================================*/
+.data__container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.item {
+    color: #3b3b3b;
+    border-bottom: 2px solid #bfbebe;
+}
+
+.item__apu,
+.item__orgaloc,
+.item__customer,
+.item__project {
+    width: 80px;
+}
+
+.item__defect,
+.item__vim {
+    width: 320px;
+}
+
+.item__ppb {
+    width: 50px;
+}
+
+.item__remove {
+    width: 10px;
+}
+
+.item__vim {
+    transition: transform 0.4s;
+}
+
+.item:nth-of-type(even) {
+    background-color: #dbdbdb;
+}
+
+.item:hover .item__remove button {
+    display: block;
+    position: relative;
+    right: 40px;
+    color: #3b3b3b;
+    font-size: 20px;
+}
+
+.item__remove:hover button:hover {
+    color: rgba(255, 0, 0, 0.7);
+    transition: color 0.1s;
+}
+
+.item:hover .item__vim {
+    transform: translateX(-20px);
+}
+
+.item__remove button {
+    display: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+

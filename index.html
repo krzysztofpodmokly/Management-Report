@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Claim Management App</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <section id="calc-panel">
+        <div class="calc-panel__container">
+
+            <div class="calc-panel__container--left">
+                <h2 class="calc-panel__container--header">Rejected Quantity</h2>
+                <div class="customer-claims">
+                    <div class="customer-total indicator">
+                        <div class="claims-qty-text transition-left">Total</div>
+                        <div class="claims-qty">14</div>
+                    </div>
+                    <div class="customer-ppb indicator">
+                        <div class="ppb-container--text transition-left">PPB</div>
+                        <div class="ppb-container--ppb">124</div>
+                    </div>
+                </div>
+
+                <div class="orgaloc-claims">
+                    <div class="orgaloc-l12 indicator red-indicator">
+                        <div class="orgaloc-text-l12 transition-left">L12</div>
+                        <div class="orgaloc-qty-l12">12</div>
+                    </div>
+                    <div class="orgaloc-l14 indicator blue-indicator">
+                        <div class="orgaloc-text-l14 transition-left">L14</div>
+                        <div class="orgaloc-qty-l14">2</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="calc-panel__container--center">
+                <h2 class="calc-panel__container--header">Weekly Management Report</h2>
+                <div class="total-ppb main-indicator">
+                    <div class="total-ppb-text transition-left">PPB</div>
+                    <div class="total-ppb-amount">3000</div>
+                </div>
+
+                <div class="l12-ppb indicator red-indicator">
+                    <div class="l12-ppb-text transition-left">L12</div>
+                    <div class="l12-ppb">1000</div>
+                </div>
+                <div class="l14-ppb indicator blue-indicator">
+                    <div class="l14-ppb-text transition-left">L14</div>
+                    <div class="l14-ppb">1000</div>
+                </div>
+            </div>
+
+            <div class="calc-panel__container--right">
+                <h2 class="calc-panel__container--header">Sales Forecast</h2>
+                <div class="sales-total indicator">
+                    <div class="sales-total-text transition-left">Total</div>
+                    <div class="sales-total-amount">80000</div>
+                </div>
+                <div class="sales-l12 indicator red-indicator">
+                    <div class="main sales-l12-text transition-left">L12</div>
+                    <div class="sales-l12-amount">30000</div>
+                </div>
+                <div class="sales-l14 indicator blue-indicator">
+                    <div class="sales-l14-text transition-left">L14</div>
+                    <div class="sales-l14-amount">50000</div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="top">
+
+        <div class="top__inputs">
+            <div class="top__inputs--apu">
+                <select class="apu custom-input">
+                    <option value="empty" selected>APU</option>
+                    <option value="Unit 1">Unit 1</option>
+                    <option value="Unit 2">Unit 2</option>
+                    <option value="Unit 3">Unit 3</option>
+                </select>
+            </div>
+            <div class="top__inputs--orgaloc">
+                <select class="orgaloc custom-input">
+                    <option value="empty" selected>Orgaloc</option>
+                    <option value="L12">L12</option>
+                    <option value="L14">L14</option>
+                </select>
+            </div>
+            <div class="top__inputs--customer">
+                <select class="customer custom-input">
+                    <option value="empty" selected>Customer</option>
+                    <option value="VW">VW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="PSA">PSA</option>
+                </select>
+            </div>
+            <div class="top__inputs--projects">
+                <select class="project custom-input">
+                    <option value="empty" selected>Project</option>
+                    <option value="Project 1">Project 1</option>
+                    <option value="Project 2">Project 2</option>
+                    <option value="Project 3">Project 3</option>
+                </select>
+            </div>
+            <div class="top__inputs--defect">
+                <input type="text" class="defect-desc custom-input" placeholder="Defect description">
+            </div>
+            <div class="top__inputs--ppb">
+                <input type="number" class="ppb custom-input" placeholder="PPB">
+            </div>
+            <div class="top__inputs--vim">
+                <input type="text" class="vim custom-input" placeholder="VIM">
+            </div>
+            <div class="top__inputs--confirm">
+                <button class="submit-btn">&#10162;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="data">
+        <div class="data__container">
+
+
+<!--
+            <div class="item" id="item-1">
+                <div class="item__apu">Unit 2</div>
+                <div class="item__orgaloc">L14</div>
+                <div class="item__customer">PSA</div>
+                <div class="item__project">Project 3</div>
+                <div class="item__defect">Defect code 43</div>
+                <div class="item__ppb">2</div>
+                <div class="item__vim">Reference code 1</div>
+                <div class="item__remove">
+                    <button class="remove-btn">&otimes;</button>
+                </div>
+            </div>
+
+            <div class="item" id="item-1">
+                <div class="item__apu">Unit 1</div>
+                <div class="item__orgaloc">L14</div>
+                <div class="item__customer">PSA</div>
+                <div class="item__project">Project 2</div>
+                <div class="item__defect">Defect code 11</div>
+                <div class="item__ppb">2</div>
+                <div class="item__vim">Reference code 2</div>
+                <div class="item__remove">
+                    <button class="remove-btn">&otimes;</button>
+                </div>
+            </div>
+-->
+
+
+        </div>
+    </section>
+
+    <script src="custom.js"></script>
+</body>
+
+</html>
